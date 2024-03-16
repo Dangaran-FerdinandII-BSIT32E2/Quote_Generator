@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "To do list";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quote Generator</title>
+    <style>
+        body {
+            background-color: lightpink;
+            width: 100vw;
+            height: 80vh;
+         
+            justify-content: center;
+            align-items: center;
+        }
+
+ 
+        .quote-container{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="quote-container">
+        <div class="position-absolute top-50 start-50 translate-middle">
+        <p class="lead">"@Model.Text"</p>
+        <cite class="lead">- @Model.Author</cite>
+
+
+      <br />
+            <br />
+            <br />
+                <button type="button" class="btn btn-primary" onclick="location.reload()">Refresh Quote</button>
+        </div>
+
+    </div>
+</body>
+</html>
+
